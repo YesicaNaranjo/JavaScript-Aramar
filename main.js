@@ -63,7 +63,6 @@ purchaseValue();
 
 const thanks = alert("¡Gracias por tu compra!");
 
-
 /*
     //Funcion que calcula el valor total de la compra
     function purchaseValue(product,quantity){
