@@ -9,7 +9,7 @@ let productValue = 0;
 let quantity = 0;
 let price = 0;
 
-//Declaración de objetos y clases:
+//Declaración de arreglos, objetos y clases:
 class Login{
     constructor(user, password){
         this.user = usuario; 
@@ -27,13 +27,29 @@ class Client{
 const juan = new Client ("Juan", "Laverde", 25);
 console.log (juan);
 
-class Product{
-    constructor(name, quantity, price){
-        this.name = name;
-        this.quantity = quantity;
-        this.price = price;
-    }
-}
+const arrayProducts = [
+    {
+    nameVegetable:"tomatoes",
+    quantitieVegetable: 0,
+    priceVegetable: 120,
+    },
+    {
+    nameVegetable:"onion",
+    quantitieVegetable: 0,
+    priceVegetable: 150,
+    },
+    {
+    nameVegetable:"paprika",
+    quantitieVegetable: 0,
+    priceVegetable: 400,
+    },
+    {
+    nameVegetable:"eggplant",
+    quantitieVegetable: 0,
+    priceVegetable: 250,
+    },
+]
+
 
 //Declaración de arreglos:
 const arrayVegetables = ["tomatoes", "onion", "paprika", "eggplant"];
@@ -45,11 +61,18 @@ const arrayPrice = [120, 150, 400, 250];
 function purchaseValue(productValue){
 
 //Con el método push el cliente adiciona las camtidades de los productos elegidos en su carrito.
-    for (let i=0; i<4; i++){
-    arrayQuantities.push(prompt("Ingresa la cantidad de " + arrayVegetables[i] + " de tu compra:"));
+    for (let i=0; i<arrayProducts.length; i++){
+        console.log(arrayProducts[i]);
+        arrayProducts.quantitieVegetable.push(prompt("Ingresa la cantidad de " + arrayProducts.nameVegetable[i] + " de tu compra:"));
     }
-    console.log(arrayQuantities);
+    console.log(arrayProducts);
+}
+purchaseValue();
+console.log(arrayProducts);
 
+
+
+/*
    for(let i=0; i<arrayVegetables.length; i++){
     var productValue =  arrayQuantities[i] * arrayPrice[i];
     totalValue = totalValue + productValue;
@@ -62,8 +85,6 @@ alert("El costo total de tu compra es de : $ " + resultado );
 purchaseValue();
 
 const thanks = alert("¡Gracias por tu compra!");
-
-/*
     //Funcion que calcula el valor total de la compra
     function purchaseValue(product,quantity){
         producto = parseInt(prompt("Ingrese el valor del producto que deseas comprar ($) :"));
@@ -78,5 +99,4 @@ const thanks = alert("¡Gracias por tu compra!");
     }    
     let resultado = valorTotal();
     alert("El costo total del producto es : $ " + resultado );
-    valorTotal();
-    */
+    valorTotal();*/
