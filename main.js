@@ -27,37 +27,50 @@ class Client{
 const juan = new Client ("Juan", "Laverde", 25);
 console.log (juan);
 
-const arrayProducts = [
-    {
-    nameVegetable:"tomatoes",
-    quantitieVegetable: 0,
-    priceVegetable: 120,
-    },
-    {
-    nameVegetable:"onion",
-    quantitieVegetable: 0,
-    priceVegetable: 150,
-    },
-    {
-    nameVegetable:"paprika",
-    quantitieVegetable: 0,
-    priceVegetable: 400,
-    },
-    {
-    nameVegetable:"eggplant",
-    quantitieVegetable: 0,
-    priceVegetable: 250,
-    },
-]
+class Product{
+    constructor(nameVegetable,quantitieVegetable,priceVegetable){
+        this.nameVegetable = nameVegetable;
+        this.quantitieVegetable = quantitieVegetable;
+        this.priceVegetable = priceVegetable;
+    }
+}
 
 
-//Declaración de arreglos:
-const arrayVegetables = ["tomatoes", "onion", "paprika", "eggplant"];
-const arrayQuantities = [];
-const arrayPrice = [120, 150, 400, 250];
+const tomatoes = new Product("tomatoes", 0, 120);
+const onion = new Product("onion", 0, 150);
+const paprika = new Product("paprika", 0, 400);
+const eggplant = new Product("tomatoes", 0, 250);
+console.log(Product);
 
+for (let i=0; i<Product.length; i++){
+    console.log(Product.nameVegetable);
+    }
+/*
+const arrayProducts = [tomatoes, onion, paprika, eggplant];
+console.log(arrayProducts);
+
+Product.quantitieVegetable = 100;
+
+for (let i=0; i<arrayProducts.length; i++){
+console.log(Product.nameVegetable);
+}
+
+/*arrayProducts.forEach(Product => {
+    console.log(arrayProducts);
+    
+});
+
+/*for (let i=0; i<arrayProducts.length; i++){
+Product.quantitieVegetable.push(prompt("Ingresa la cantidad de tomates a comprar : " + Product.quantitieVegetable[i]));
+console.log(Product.quantitieVegetable);
+
+}
+console.log(arrayProducts);
+
+
+
+/*
 //Funcion que calcula el valor total de la compra
-
 function purchaseValue(productValue){
 
 //Con el método push el cliente adiciona las camtidades de los productos elegidos en su carrito.
