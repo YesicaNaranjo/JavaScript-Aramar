@@ -4,14 +4,146 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+   <!--Link de referencia a fuente de letra-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!--link css-->
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Carrito de compras</title>
 </head>
-<body>
 
-    <h1>TU CARRITO</h1>
-    <p>Los artículos en tu carrito no están reservados. Termina el proceso de compra ahora para confirmar tu compra.</p>
-    <script src="main.js"></script>
-    
+<!---->
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md">
+          <div class="container-fluid">
+           <a href="index.html">
+           <img class="logo navbar-brand" src="./img/logo-aramar-blanco.png" alt="Logo autoservicio Aramar"> </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="menu navbar-nav me-auto mb-2 mb-lg-0">
+                 <li class="nav-item">
+                   <a class="nav-link active" aria-current="page" href="./sections/home.html">Inicio</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link active" aria-current="page" href="index.html">Productos</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link active" aria-current="page" href="index.html">Promociones</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link active" aria-current="page" href="index.html">Nosotros</a>
+                 </li>
+    </header>
+
+    <main>
+    <section>
+      <h1>TU CARRITO</h1>
+            <p> Los artículos en tu carrito no están reservados. Termina el proceso de compra ahora para asegurar tu compra.</p>
+            <ul>
+        <li class="producto">
+          <h3>Chocolate Sol</h3>
+                    <img src="./img/chocolate-aramar-nueva-imagen.png" alt="Chocolate Sol">
+          <p>Precio: $10.00</p>
+          <button>Agregar al carrito</button>
+        </li>
+        <li class="producto">
+          <h3>Wakeup Crema mani coco</h3>
+                    <img src="./img/wakeup-crema-mani-coco.png" alt="wakeup-crema-mani-coco">
+          <p>Precio: $15.00</p>
+          <button>Agregar al carrito</button>
+        </li>
+        <li class="producto">
+          <h3>Wakeup Crema mani frutos rojos</h3>
+                    <img src="./img/wakeup-crema-mani-frutos-rojos.png" alt="wakeup-crema-mani-frutos-rojos">
+          <p>Precio: $20.00</p>
+          <button>Agregar al carrito</button>
+        </li>
+      </ul>
+    </section>
+    <aside>
+      <h2>RESUMEN DE COMPRA</h2>
+      <ul>
+        <li>
+          <h3>Chocolate Sol</h3>
+          <p>Precio: $10.00</p>
+          <p>Cantidad: 1</p>
+        </li>
+        <li>
+          <h3>Wakeup Crema mani coco</h3>
+          <p>Precio: $15.00</p>
+          <p>Cantidad: 2</p>
+        </li>
+        <li>
+          <h3>Wakeup Crema mani frutos rojos</h3>
+          <p>Precio: $20.00</p>
+          <p>Cantidad: 1</p>
+        </li>
+      </ul>
+      <h3>Total: $60.00</h3>
+      <button>IR A PAGAR</button>
+        <p>FORMAS DE PAGO ACEPTADAS:</p>
+    </aside>
+
+  </main>
+
+<!---->
+<footer>
+    <div>
+      <h5>Encuentranos:</h5>
+      <p class="pie">Sede centro: Calle 23 # 22 - 51 </p>
+      <p class="pie">Sede bosque: Calle 27 # 15 - 10 </p>
+      <a href="https://goo.gl/maps/iWJkEoQsPL7MEByC6" style="display: flex;align-items: center;" target="_blank"> 
+      <img src="./img/mapa-aramarcentro.png" class="img-fluid" alt="ubicacion-autoservicio-google-maps"> </a>
+    </div>
+
+    <div>
+      <img src="./img/logo-aramar-blanco.png" alt="logo-del-autoservicio">
+      <ul class="iconosFooter">
+        <li> <a href="https://wa.me/573144939856" target="_blank"> <img class="icono" src="./img/logo-whatsapp-sinfondo.png" alt="logo de whatsapp"></a>  </li>
+        <li>   <img  class="icono" src="./img/logo-instagram-sinFondo.png" alt="logo de instagram">  </li>
+        <li>  <a href="https://www.facebook.com/profile.php?id=100063645036905" target="_blank"> <img class="icono" src="./img/logo-facebook-sinFondo.png" alt="logo de facebook"></a>   </li>
+      </ul>
+    </div>
+
+    <div>
+      <h5>Suscribete a nuestro newsletter:</h5>
+      <form class=" d-flex" role="search">
+        <input class="form-control " type="search" placeholder="Escribe tu correo" aria-label="Escribe tu correo">
+        <button class="btn btn-outline-success" type="submit">Suscribirse</button>
+      </form>
+      <div class="input-group check d-flex">
+       <!-- </div>
+        <input type="text" class="form-control" aria-label="Text input with radio button">
+      </div>-->
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+        <label class="form-check-label" for="flexCheckChecked"> Acepto términos y condiciones. Autorizo el tratamiento de mis datos personales. </label>
+      </div>
+      </div>
+      <div style="margin-top: 40px;">
+        <h5>Hablemos:</h5>
+        <div class="hablemos">
+          <a href="https://wa.me/573144939856" class="hab" target="_blank">
+            <!--<img  class = "hablemosImg" src="./img/logo-whatsapp-sinfondo.png">-->
+            <span class ="hablemosSpan" >Whatsapp: +57 312 585 7981</span>
+          </a>
+        </div>
+        <div class="hablemos">
+          <a href="mailto:aramar.paipa@gmail.com" class="hab" target="_blank">
+          <!--<img src="./img/logo-correo-sinfondo.png">-->
+          <span> Correo: aramar.paipa@gmail.com </span>
+          </a>
+        </div>
+          <!--          <div>
+          <a href="mailto:aramar.paipa@gmail.com" style="display: flex;align-items: center;" target="_blank">
+            <img src="./img/logo-correo-sinfondo.png" width="10px" style="margin-right: 10px;">
+            <span> Correo: aramar.paipa@gmail.com </span>
+          </a>
+          </div>-->
+      </div>
+    </div>
+</footer>
+
 </body>
 </html>

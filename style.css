@@ -1,0 +1,137 @@
+
+/*ESTILOS DEL HEADER*/
+header {
+    font-family: 'Poppins', sans-serif;
+    background-color: #94cc3c;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 5px; }
+    header .carrito {
+      margin-right: 50px;
+      width: 3%;
+      height: 3%; }
+      header nav div .logo {
+        /* estructura espacial del logo */
+        margin: 5px;
+        margin-left: 50px;
+        width: 10%;
+        /*Propiedades de la animacion*/
+        animation-name: focalizacion;
+        animation-duration: 4s;
+        animation-delay: 1s; }
+
+  @keyframes focalizacion {
+    0% {
+      transform: scale(1); }
+    20% {
+      transform: scale(1.2); }
+    100% {
+      transform: scale(1); } }
+
+      header nav div div .menu {
+        display: flex;
+        display: inline-flex;
+        justify-content: flex-end;
+        list-style: none;
+        margin: 10px;
+        font-size: 1rem; }
+  
+  /*ESTILOS DEL BODY*/
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 12px;
+  }
+  main ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  }
+  main ul li{
+      padding: 5px;
+      margin-bottom: 4px;
+      border: 1px solid black;
+  }
+  main ul li button {
+    background-color:darkolivegreen;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+
+section {
+  flex-basis: 60%;
+}
+
+aside {
+  flex-basis: 35%;
+  background-color: #eee;
+  padding: 10px;
+}
+
+button {
+  background-color:darkolivegreen;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+p {
+  margin: 10px;
+}
+.producto img {
+    width: 200px;
+    height: 200px;
+  
+}
+
+/*ESTILOS DEL FOOTER*/
+footer {
+    font-family: 'Poppins', sans-serif;
+    padding: 22px;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: 1fr;
+    background-color: #94cc3c;
+    justify-content: center;
+    margin-block-end: auto; }
+    footer div .pie {
+      margin: 3px; }
+    footer div img {
+      margin-top: 30px;
+      width: 50%; }
+    footer div .iconosFooter {
+      display: flex;
+      display: inline-flex;
+      list-style: none; }
+    footer div ul .icono {
+      width: 45px;
+      height: 44px;
+      transform: translate(15px); }
+    footer div .hablemos {
+      display: flex;
+      display: inline-flex;
+      list-style: none; }
+
+
+

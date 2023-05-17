@@ -35,12 +35,10 @@ class Product{
     }
 }
 
-
 const tomatoes = new Product("tomatoes", 0, 120);
 const onion = new Product("onion", 0, 150);
 const paprika = new Product("paprika", 0, 400);
 const eggplant = new Product("tomatoes", 0, 250);
-console.log(Product);
 
 for (let i=0; i<Product.length; i++){
     console.log(Product.nameVegetable);
@@ -68,7 +66,6 @@ console.log(Product.quantitieVegetable);
 console.log(arrayProducts);
 
 
-
 /*
 //Funcion que calcula el valor total de la compra
 function purchaseValue(productValue){
@@ -82,8 +79,6 @@ function purchaseValue(productValue){
 }
 purchaseValue();
 console.log(arrayProducts);
-
-
 
 /*
    for(let i=0; i<arrayVegetables.length; i++){
