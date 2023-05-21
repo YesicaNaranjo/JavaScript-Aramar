@@ -43,6 +43,13 @@ const eggplant = new Product("tomatoes", 0, 250);
 for (let i=0; i<Product.length; i++){
     console.log(Product.nameVegetable);
     }
+
+const btnAdicion = document.getElementById("btnAdicion");
+btnAdicion.addEventListener ("click",()=>{
+    alert("producto añadido al carrito de compras satisfactoriamente");
+})
+
+
 /*
 const arrayProducts = [tomatoes, onion, paprika, eggplant];
 console.log(arrayProducts);
